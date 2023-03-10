@@ -10,6 +10,8 @@ public class Agence {
     {
         //à completer
     }
+
+
     public void ajoutVoiture(Voiture v)
             throws VoitureException{
         // à completer
