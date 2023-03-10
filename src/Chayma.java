@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Chayma {
     private int cin ;
     private  int age ;
@@ -49,4 +51,16 @@ public class Chayma {
         this.prenom = prenom;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Chayma chayma = (Chayma) o;
+        return cin == chayma.cin && age == chayma.age && Objects.equals(nom, chayma.nom) && Objects.equals(prenom, chayma.prenom);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(cin, age, nom, prenom);
+    }
 }
