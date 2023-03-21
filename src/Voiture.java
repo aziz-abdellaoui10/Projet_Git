@@ -33,7 +33,7 @@ public class Voiture {
     }
 
     public void setPrixLocation(float prixLocation) {
-        this.prixLocation = prixLocation;
+        this.prixLocation = prixLocation*5;
     }
 
     @Override
