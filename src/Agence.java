@@ -13,7 +13,7 @@ public class Agence {
         vs = new ListVoitures();
         clientVoitureLoue = new HashMap<>();
     }
-//////////////////
+
     public void ajoutVoiture(Voiture v) throws VoitureException {
         vs.ajoutVoiture(v);
     }
@@ -69,13 +69,16 @@ public class Agence {
         });
     }
 
-    public Map<Client, ListVoitures> triCodeCroissant() {
+    public Map<Client, ListVoitures> triCodeCroissant()
+
+    {
         Map<Client, ListVoitures> map = new TreeMap<>((c1, c2) -> c1.getCode() - c2.getCode());
         map.putAll(clientVoitureLoue);
         return map;
     }
 
-    public Map<Client, ListVoitures> triNomCroissant() {
+    public Map<Client, ListVoitures> triNomCroissant()
+    {
         Map<Client, ListVoitures> map = new TreeMap<>((c1, c2) -> c1.getNom().compareTo(c2.getNom()));
         map.putAll(clientVoitureLoue);
         return map;
