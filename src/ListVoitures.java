@@ -7,7 +7,7 @@ public class ListVoitures {
         //à compléter
     }
     public ListVoitures() {
-        return this.voitures;
+        //à compléter
     }
     public List<Voiture> getVoitures() {
         //à compléter

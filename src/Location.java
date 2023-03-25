@@ -7,6 +7,7 @@ public class Location {
     private int clientCIN;
     private Date dateLocation;
     private int dureeLocation;
+    private String varForConflict;
 
     public Location(String matricule, int clientCIN, Date dateLocation, int dureeLocation) {
         this.matricule = matricule;
