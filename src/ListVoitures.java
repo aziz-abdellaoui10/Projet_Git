@@ -33,7 +33,7 @@ public class ListVoitures {
             throws VoitureException{
 
         if (v == null) {
-            throw new VoitureException("La voiture à ajouter ne peut pas être null");
+            throw new VoitureException("La voiture null");
         }
 
         voitures.add(v);
