@@ -2,12 +2,12 @@ import java.util.Iterator;
 import java.util.List;
 
 public class ListVoitures {
-    private List<Voiture> voitures; public
-    ListVoitures(List<Voiture> voitures) {
+    private List<Voiture> voitures;
+    public ListVoitures(List<Voiture> voitures) {
         //à compléter
     }
     public ListVoitures() {
-        //à compléter
+        return this.voitures;
     }
     public List<Voiture> getVoitures() {
         //à compléter
