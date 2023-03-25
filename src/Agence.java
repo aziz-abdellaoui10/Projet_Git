@@ -46,7 +46,7 @@ public class Agence {
                 voitures.add(v);
             }
         }
-
+//////////
         for (Map.Entry<Client, ListVoitures> entry : clientVoitureLoue.entrySet()) {
             for (Voiture v : entry.getValue().getVoitures()) {
                 if (c.estSatisfaitPar(v)) {
